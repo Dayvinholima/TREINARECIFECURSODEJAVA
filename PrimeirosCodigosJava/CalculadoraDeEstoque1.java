@@ -10,17 +10,19 @@ public class CalculadoraDeEstoque1 {
 
         // while (contador)
 
-        while(contador < NumLivros){   //verifica siação
+      /*  while(contador < NumLivros){   //verifica siação
             soma += 59.90;
-            contador++;     // incrementação 
+            contador++;     // incrementação
+            
+      }
+        */
         
         
-        }
 
 
         //for (contador)
 
-        for(int i = 0; i < NumLivros){
+        for(int i = 0; i < NumLivros ){
             if (i ==2){
                 break;
             }

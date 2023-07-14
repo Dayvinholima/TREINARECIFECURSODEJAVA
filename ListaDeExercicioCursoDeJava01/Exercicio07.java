@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class Exercicio07 {
     public static void main(String[] args){
@@ -45,8 +45,37 @@ public class Exercicio07 {
     
 
 
-}
+}*/
 
+import java.util.Scanner;
+
+public class Exercicio07 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite o valor da quantia:");
+        int n = sc.nextInt();
+
+        sc.close();
+
+        int[] cedulas = new int[]{100, 50, 20, 10, 5, 2, 1};
+
+        for (int i = 0; i < cedulas.length; i++) {
+            int cedulaAtual = cedulas[i];
+
+            int notas = n / cedulaAtual;
+            
+            int resto = n % cedulaAtual;
+
+            n = resto;
+
+            System.out.printf("%d nota(s) de R$ %d\n", notas, cedulaAtual);
+        }
+
+    }
+    
+}
 
     
 
