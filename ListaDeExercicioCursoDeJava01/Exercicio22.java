@@ -1,42 +1,27 @@
 import java.util.Scanner;
 
 public class Exercicio22 {
+    
 public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Digite o consumo de água da residência em m3: ");
+        int consumo = scanner.nextInt();
+
         scanner.close();
 
-        int anoCarroMaisNovo = 0;
-        double velocidadeCarroMaisRapido = 0;
-        double somaVelocidades = 0;
+        double valorConta = 7.0; // Valor da assinatura básica
 
-        for (int i = 1; i <= 3; i++) {
-            System.out.print("Digite o ano do " + i + "º carro: ");
-            int ano = scanner.nextInt();
-
-            System.out.print("Digite a velocidade do " + i + "º carro: ");
-            double velocidade = scanner.nextDouble();
-
-            if (i == 1 || ano > anoCarroMaisNovo) {
-                anoCarroMaisNovo = ano;
-            }
-
-            if (i == 1 || velocidade > velocidadeCarroMaisRapido) {
-                velocidadeCarroMaisRapido = velocidade;
-            }
-
-            somaVelocidades += velocidade;
+        if (consumo <= 10) {
+            // O consumo está incluído na franquia, não é cobrado adicional
+        } else if (consumo <= 30) {
+            valorConta += (consumo - 10) * 1.0; // Preço por m3 na faixa de 11 a 30 é R$ 1
+        } else if (consumo <= 100) {
+            valorConta += 20 + (consumo - 30) * 2.0; // Preço por m3 na faixa de 31 a 100 é R$ 2
+        } else {
+            valorConta += 20 + 140 + (consumo - 100) * 5.0; // Preço por m3 acima de 100 é R$ 5
         }
 
-        double velocidadeMedia = somaVelocidades / 3;
-
-        System.out.println("Ano do carro mais novo = " + anoCarroMaisNovo);
-        System.out.printf("Velocidade do mais rápido = %.2f%n", velocidadeCarroMaisRapido);
-        System.out.printf("Velocidade média = %.2f%n", velocidadeMedia);
+        System.out.println("Valor em Reais: " + String.format("%.2f", valorConta));
     }
 }
-
-
-
-
-
