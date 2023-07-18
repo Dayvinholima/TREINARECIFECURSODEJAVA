@@ -5,7 +5,9 @@ public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         for (int i = 0; i < 3; i++) {
+            System.out.print("Informe o valor de M: ");
             int M = sc.nextInt();
+            System.out.print("Informe o valor de N: ");
             int N = sc.nextInt();
 
             // Encontra o menor e o maior valor entre M e N
@@ -14,13 +16,11 @@ public static void main(String[] args) {
 
             // Inicializa a variável para armazenar a soma
             int soma = 0;
-            
+
             // Imprime a sequência e calcula a soma dos inteiros consecutivos
             for (int j = menor; j <= maior; j++) {
                 System.out.print(j + " ");
                 soma += j;
-
-                
             }
 
             System.out.println("Soma = " + soma);
