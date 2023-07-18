@@ -5,10 +5,10 @@ public class Exercicio24 {
 public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        scanner.close();
-
         System.out.print("Digite um número de 5 algarismos: ");
         int numero = scanner.nextInt();
+
+        scanner.close();
 
         String numeroStr = Integer.toString(numero);
 

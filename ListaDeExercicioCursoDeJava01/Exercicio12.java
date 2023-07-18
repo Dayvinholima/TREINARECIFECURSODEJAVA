@@ -15,7 +15,7 @@ public class Exercicio12 {
 
         scanner.close();
 
-        String animal ;
+        String animal = "" ;
 
         if (palavra1.equals("vertebrado")) {
             if (palavra2.equals("ave")) {
@@ -51,7 +51,7 @@ public class Exercicio12 {
         
         }
 
-        System.out.printf("O animal correspondente é: " + animal);
+        System.out.printf("O animal correspondente é: " ,  animal);
 
         
     }
