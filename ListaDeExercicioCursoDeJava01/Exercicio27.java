@@ -17,8 +17,6 @@ public static void main(String[] args) {
         scanner.close();
 
         Arrays.sort(medicoes);
-
-        
         
         double media = somaMedicoes / 4.0;
         System.out.println("Glicose média: " + media);

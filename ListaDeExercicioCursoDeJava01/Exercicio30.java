@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Exercicio30 {
@@ -5,11 +6,11 @@ public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         for (int i = 0; i < 3; i++) {
-            System.out.print("Informe o valor de M: ");
+            System.out.printf("Informe o valor de M:, ", i+1);
             int M = sc.nextInt();
-            System.out.print("Informe o valor de N: ");
+            System.out.printf("Informe o valor de N: ", i+1 );
             int N = sc.nextInt();
-
+            
             // Encontra o menor e o maior valor entre M e N
             int menor = Math.min(M, N);
             int maior = Math.max(M, N);

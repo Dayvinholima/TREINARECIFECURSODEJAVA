@@ -6,7 +6,7 @@ public class Exercicio26 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Digite a altura da pessoa em cm: ");
-        float altura = scanner.nextFloat();
+        double altura = scanner.nextDouble();
 
         System.out.print("Digite a idade da pessoa: ");
         int idade = scanner.nextInt();
