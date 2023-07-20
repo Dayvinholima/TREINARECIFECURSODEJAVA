@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class Exercicio25 {
     
-public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println("Digite os 5 números (0 ou 1) representando a Interface Gráfica, Inteligência Artificial, Encapsulamento, Indentação e Structs, respectivamente: ");
+        String entrada = scanner.nextLine();
         scanner.close();
 
         System.out.print("Digite um número de 5 algarismos: ");
@@ -12,16 +13,14 @@ public static void main(String[] args) {
 
         String numeroStr = Integer.toString(numero);
 
-        boolean palindromo = true;
-        int tamanho = numeroStr.length();
+        System.out.println(resultado);
+    }
 
-        for (int i = 0; i < tamanho / 2; i++) {
-            if (numeroStr.charAt(i) != numeroStr.charAt(tamanho - i - 1)) {
-                palindromo = false;
-                break;
-            }
+    public static String verificarAvaliacao(String entrada) {
+        if (entrada.contains("0")) {
+            return "Zero";
+        } else {
+            return "AVALIADO";
         }
-
-        System.out.println(palindromo ? "S" : "N");
     }
 }
