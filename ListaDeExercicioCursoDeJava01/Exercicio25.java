@@ -8,10 +8,7 @@ public class Exercicio25 {
         String entrada = scanner.nextLine();
         scanner.close();
 
-        System.out.print("Digite um número de 5 algarismos: ");
-        int numero = scanner.nextInt();
-
-        String numeroStr = Integer.toString(numero);
+        String resultado = verificarAvaliacao(entrada);
 
         System.out.println(resultado);
     }
