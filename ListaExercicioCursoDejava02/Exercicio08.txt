@@ -1,0 +1,55 @@
+(F) Java possui 8 tipos primitivos: byte, short, int, long, float, double, char e boolean.
+
+(V) Não é possível comparar tipos primitivos utilizando o operador "==". Em Java, o operador "==" compara valores para tipos primitivos e referências para objetos.
+
+(V) Atributos de interface são sempre final. Em interfaces, os atributos são implicitamente declarados como public, static e final.
+
+(F) Palavras reservadas do Java são aquelas que não podem ser usadas para nomear membros de classes. Na verdade, as palavras reservadas são termos-chave da linguagem que têm significado especial em Java e não podem ser usadas para outros fins, como nomear variáveis.
+
+(V) Em Java, toda variável, sem exceção, deve ser declarada antes de ser usada.
+
+(V) As subclasses podem adicionar membros próprios. As subclasses herdam membros da classe pai (superclasse) e também podem adicionar novos membros específicos.
+
+(V) Variáveis polimórficas podem referenciar objetos de uma classe (subclasse) da superclasse declarada. Isso é conhecido como polimorfismo de subtipo.
+
+(F) Em métodos, o modificador "abstract" obriga que suas subclasses não abstratas implementem o método. Na verdade, o modificador "abstract" indica que o método não possui uma implementação e deve ser sobrescrito pelas subclasses abstratas.
+
+(F) Um método definido como final não pode ser sobreposto por uma classe descendente. O modificador "final" indica que o método não pode ser sobrescrito pelas subclasses.
+
+(V) Classe com modificador final só pode ser especializada por herança. O modificador "final" em uma classe indica que ela não pode ser estendida (não pode ter subclasses).
+
+(V) O modificador "final" estabelece que um atributo não pode ter seu valor modificado após a inicialização.
+
+(V) A visibilidade definida por "public" permite que um determinado atributo seja acessível a partir de quaisquer métodos, objetos e classes.
+
+(F) O modificador "protected" restringe o acesso oriundo de outro pacote. Na verdade, o modificador "protected" permite o acesso aos membros apenas para as classes que estão no mesmo pacote ou para subclasses, independentemente do pacote em que estejam.
+
+(V) Os atributos e métodos privados de uma classe são acessíveis apenas nos métodos da própria classe.
+
+(F) A estrutura switch não aceita qualquer tipo de dado primitivo do Java. O switch só aceita tipos inteiros, char e enum em Java.
+
+(V) Encapsulamento consiste em proteger os atributos de acessos e modificações não controladas, centralizando o gerenciamento e a validação dos dados antes de serem armazenados pelos objetos.
+
+(V) O encapsulamento permite definir o grau de visibilidade dos atributos de uma classe, estabelecendo restrições e permissões por métodos ao sistema.
+
+(F) O encapsulamento também pode ser implementado em interfaces, por meio do uso de métodos getters e setters.
+
+(V) A implementação de uma interface obriga a classe a implementar todos os métodos definidos, a não ser que a classe seja definida como abstrata, podendo assim deixar a implementação para as suas subclasses não abstratas.
+
+(V) O polimorfismo de sobrecarga (ou sobrecarga de método) pode ser utilizado para distinguir, em uma determinada classe, dois métodos com o mesmo nome, mas com parâmetros diferentes.
+
+(V) Polimorfismo é o conceito que define que mais vários métodos, com o mesmo nome, podem implementar diferentes formas de executar, dependendo de como ele é acionado. Isso ocorre através da sobrescrita (override) de métodos em subclasses.
+
+(V) Override é um tipo de polimorfismo que só ocorre em caso de herança. A sobrescrita (override) de métodos é uma forma de polimorfismo.
+
+(V) Na herança, todos os atributos são herdados, inclusive os privados.
+
+(V) Em Java, as subclasses herdam atributos e métodos da classe Object, que é a classe raiz de todas as classes em Java.
+
+(F) Uma classe Java pode herdar de uma única classe na herança simples, e de várias na herança múltipla. Em Java, a herança é simples, o que significa que uma classe pode ter apenas uma classe pai (superclasse).
+
+(V) Além de herdar entidades de sua classe-pai, uma classe derivada pode modificar métodos herdados, inclusive podendo até acrescentar novas entidades, sem afetar a estrutura da classe que a originou. Isso é possível através da sobrescrita de métodos.
+
+Dessa forma, as afirmações verdadeiras (V) são: 2, 3, 5, 6, 7, 10, 12, 13, 16, 17, 19, 20, 21, 22, 23, 24, 26.
+
+As afirmações falsas (F) são: 1, 4, 8, 9, 11, 14, 15, 18, 25.

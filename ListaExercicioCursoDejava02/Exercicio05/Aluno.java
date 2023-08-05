@@ -1,0 +1,137 @@
+package Exercicio05;
+import java.sql.Date;
+
+public class Aluno{
+    private String matricula;
+    private String nome;
+    private String cpf;
+    private Date dataNascimento;
+    private String sexo;
+    private String endereço;
+    private String cidade;
+    private String uf;
+    private String turma;
+    
+    
+    
+    public Aluno(String matricula, String nome, String cpf, Date dataNascimento, String sexo, String endereço,
+            String cidade, String uf) {
+        this.matricula = matricula;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.dataNascimento = dataNascimento;
+        this.sexo = sexo;
+        this.endereço = endereço;
+        this.cidade = cidade;
+        this.uf = uf;
+    }
+
+
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+
+
+    public String getNome() {
+        return nome;
+    }
+
+
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+
+
+    public String getCpf() {
+        return cpf;
+    }
+
+
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+
+
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+
+
+    public String getSexo() {
+        return sexo;
+    }
+
+
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+
+
+    public String getEndereço() {
+        return endereço;
+    }
+
+
+
+    public void setEndereço(String endereço) {
+        this.endereço = endereço;
+    }
+
+
+
+    public String getCidade() {
+        return cidade;
+    }
+
+
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+
+
+    public String getUf() {
+        return uf;
+    }
+
+
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+
+
+
+    public String getTurma() {
+        return turma;
+    }
+
+
+
+    public void setTurma(String turma) {
+        this.turma = turma;
+    }
+
+}
